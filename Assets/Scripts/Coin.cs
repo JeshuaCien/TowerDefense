@@ -22,9 +22,17 @@ public class Coin : MonoBehaviour
 
     private Coroutine _appearCoroutine;
 
+    private Collider _collider;
+
+    private void Awakw()
+    {
+        _collider = GetComponent<Collider>();
+    }
+
     private void Onnable()
     {
         _appearCoroutine = StartCoroutine(Appear());
+        _collider.enabled = true;
     }
 
     private IEnumerator Appear()
@@ -36,6 +44,7 @@ public class Coin : MonoBehaviour
 
     public void Collect()
     {
+        _collider.enabled = false;
         Stop();
         StartCoroutine(Disappear());
     }
@@ -54,5 +63,10 @@ public class Coin : MonoBehaviour
             StopCoroutine(_appearCoroutine);
             _appearCoroutine = null;
         }
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }
