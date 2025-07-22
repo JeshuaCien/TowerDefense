@@ -21,7 +21,7 @@ public class ClicksRaycast : MonoBehaviour
 
     private void Update()
     {
-        if (_isActive && Input.GetMouseButtonDown(0))
+        if (_isActive && Input.GetMouseButton(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

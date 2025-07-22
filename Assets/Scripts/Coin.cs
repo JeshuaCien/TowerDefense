@@ -24,7 +24,7 @@ public class Coin : MonoBehaviour
 
     private Collider _collider;
 
-    private void Awakw()
+    private void Awake()
     {
         _collider = GetComponent<Collider>();
     }
