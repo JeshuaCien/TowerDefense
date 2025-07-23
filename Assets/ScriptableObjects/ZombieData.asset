@@ -21,4 +21,4 @@ MonoBehaviour:
   _AttackAnimationName: Attack
   _DeathAnimationName: Death
   _HitAnimationName: Hit
-  _WinAnimationName: Win
+  _WinAnimationName: Victory
