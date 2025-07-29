@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc9d14b3da664441809bc3031f340fe, type: 3}
   m_Name: ZombieData
   m_EditorClassIdentifier: 
-  _RunSpped: 0.5
-  _AttackDamage: 10
-  _AttackRange: 0.2
+  _RunSpped: 0.02
+  _AttackDamage: 5
+  _AttackRange: 0.01
   _AttackDuration: 1
   _AttackWaitTime: 1
   _RunAnimationName: Run

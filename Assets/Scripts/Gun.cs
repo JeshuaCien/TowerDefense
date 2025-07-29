@@ -58,4 +58,10 @@ public class Gun : MonoBehaviour
             _turret.LookAt(_target.Target);
         }
     }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        _target = null;
+    }
 }

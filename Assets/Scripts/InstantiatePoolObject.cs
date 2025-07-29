@@ -12,22 +12,29 @@ public class InstantiatePoolObject : MonoBehaviour
 
     private List<GameObject> _pool = new();
 
-    public void InstantiateListObject(Transform target)
+    private GameObject _currentObject;
+
+    public void InstantiateObject(Transform target)
     {
-        GameObject obj = GetPooledObject();
-        if (obj != null)
+        _currentObject = GetPooledObject();
+        if (_currentObject != null)
         {
-           PositionObject(obj, target.position, target.rotation);
+            PositionObject(_currentObject, target.position, target.rotation);
         }
     }
 
     public void InstantiateObject(Vector3 position)
     {
-        GameObject obj = GetPooledObject();
-        if (obj != null)
+        _currentObject = GetPooledObject();
+        if (_currentObject != null)
         {
-            PositionObject(obj, position, Quaternion.identity);
+            PositionObject(_currentObject, position, Quaternion.identity);
         }
+    }
+
+    public GameObject GetCurrentObject()
+    {
+        return _currentObject;
     }
 
     private void PositionObject(GameObject obj, Vector3 position, Quaternion rotation)
