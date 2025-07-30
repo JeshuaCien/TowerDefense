@@ -27,10 +27,10 @@ public class EnemySpawner : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds(_secondsToSpawn);
             Vector2 direction = Random.insideUnitCircle.normalized;
             Vector3 spawnPosition = new Vector3(direction.x, 0, direction.y) * _radius;
             _spawnEnemy?.Invoke(spawnPosition);
-            yield return new WaitForSeconds(_secondsToSpawn);
         }
     }
 }

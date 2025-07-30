@@ -26,10 +26,10 @@ public class CoinsSpawner : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds(_spawnInterval);  
             Vector3 spawnPosition = Random.insideUnitSphere * _radius;
             spawnPosition.y = _positionY;
-            _spawnCoin?.Invoke(spawnPosition);
-            yield return new WaitForSeconds(_spawnInterval);  
+            _spawnCoin?.Invoke(spawnPosition);  
         }
     }
 
