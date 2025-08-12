@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Zombie2Data
   m_EditorClassIdentifier: 
   _RunSpped: 0.01
-  _AttackDamage: 10
+  _AttackDamage: 5
   _AttackRange: 0.01
   _AttackDuration: 1
   _AttackWaitTime: 0.5

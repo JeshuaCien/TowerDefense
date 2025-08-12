@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthSlider: {fileID: 100467048}
-  _maxHealth: 100
+  _maxHealth: 300
   _onTakeDamage:
     m_PersistentCalls:
       m_Calls:
@@ -1089,7 +1089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 636f87bcca7fba34581be7c4394dc7a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gunCost: 10
+  _gunCost: 4
   _gunPool: {fileID: 367691908}
   _coisnNumber: {fileID: 1520203587}
   _costText: {fileID: 818854890}
@@ -1530,7 +1530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150947404ed7d794f966f5dbb6cda96f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _secondsToSpawn: 5
+  _secondsToSpawn: 10
   _radius: 0.2
   _spawnEnemy:
     m_PersistentCalls:
@@ -4292,7 +4292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150947404ed7d794f966f5dbb6cda96f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _secondsToSpawn: 8
+  _secondsToSpawn: 15
   _radius: 0.3
   _spawnEnemy:
     m_PersistentCalls:
